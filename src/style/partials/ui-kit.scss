@@ -1,0 +1,126 @@
+body {
+	color: #000;
+	font-size: 14px;
+}
+
+a, input, button {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: $color-text;
+}
+
+.image-wrap {
+	&_two {
+		@include aspect-ratio(2, 1);
+	}
+	&_three {
+		@include aspect-ratio(3, 1);
+	}
+}
+
+.button {
+  	border: 2px solid transparent;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 0 22px;
+    height: 40px;
+  	color: $white;
+    line-height: 38px;
+    display: inline-block;
+
+    &_transparent {
+	    background-color: transparent;
+	    border-color: $white;
+	    text-transform: uppercase;
+
+	    &:focus,
+	    &:hover  {
+    	  	box-shadow: 0px 0px 8px 0px rgba(250, 110, 112, 0.5);
+	    }
+	    &:hover {
+	    	cursor: pointer;
+	    }
+	    &:focus:active {
+    	  	box-shadow: inset 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
+	    }
+
+
+    }
+    &_green {
+		border-color: $color-greenelem;
+		background-color: $color-greenelem;
+		&:focus,
+		&:hover  {
+			box-shadow: 0px 0px 8px 0px rgba(250, 110, 112, 0.5);
+		}
+
+	    &:hover {
+	    	cursor: pointer;
+	    	background-color: #5fad34;
+	    	border-color: #5fad34;
+	    }
+	    &:focus:active {
+	  	  	box-shadow: inset 0px 5px 8px 0px rgba(0, 0, 0, 0.3);		
+	    }
+		
+	}
+	&_gray {
+		border-color: $white;
+		background-color: #b2b2b2;
+
+		&:focus,
+		&:hover  {
+    	  	box-shadow: 0px 0px 8px 0px rgba(250, 110, 112, 0.5);
+	    }
+	    &:hover {
+	    	cursor: pointer;
+	    	background-color: #979797;
+	    }
+	    &:focus:active {
+    	  	box-shadow: inset 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
+	    }
+
+    }
+    &_withicon {
+    	i {
+    		font-size: 18px;
+    		margin-right: 8px;
+    	}
+    }
+    &_onlyicon {
+    	width: 40px;
+    	padding: 0;
+    	text-align: center;
+    }
+
+    &.disabled,
+    &[disabled] {
+    	opacity: 0.4;
+    }
+
+    [class*="icon-"] {
+		color: $white;
+	}
+}
+
+.g-divider {
+	display: block;
+	height: 1px;
+	background-color: $color-divider;
+
+	&_margin {
+		margin-bottom: 30px;
+	}
+}
+
+[class*="icon-"] {
+	color: $color-icons;
+}
+
+.container {
+	padding: 16px;
+}
+

@@ -1,0 +1,22 @@
+{
+  "name": "ogorodnik",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ihor Horobets <sgfootball.gim@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-strings": "normalize#^1.1.0",
+    "normalize-css": "^7.0.0",
+    "normalize-scss": "normalize.scss#^7.0.0"
+  }
+}
